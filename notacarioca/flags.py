@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 
 RPS_SITUATION = (
+    ("", "---------"),
     (1, 'Normal'),
     (2, 'Cancelado')
 )
 
 OPERATION_NATURE = (
+    ("", "---------"),
     (1, 'Tributação no município'),
     (2, 'Tributação fora do município'),
     (3, 'Isenção'),
@@ -25,6 +27,7 @@ TAX_REGIME = (
 )
 
 RPS_TYPE = (
+    ("", "---------"),
     (1, "RPS"),
     (2, "Nota Conjugada"),
     (3, "Cupom")

@@ -69,16 +69,16 @@ class TestNotaCarioca(TestCase):
             'user':1,
             'nfse_mirror':None,
             'nfse_xml':None,
-            'number':47,
-            'serie':u'1',
-            'rps_type':u'1',
+            'number':99,
+            'service_values_serie':u'1',
+            'service_values_rps_type':u'1',
             'emission_date':datetime(2015, 9, 28, 9, 51),
             'emission_date_nfse':None,
-            'operation_nature':u'1',
-            'rps_situation':u'1',
+            'service_values_operation_nature':u'1',
+            'service_values_rps_situation':u'1',
             'other_informations':u'',
             'competence':None,
-            'special_regime':u'',
+            'service_values_special_regime':u'',
             'emitter_email':u'comercial@myfinance.com.br',
             'emitter_cnpj':u'17799377000155',
             'emitter_social_reason':u'Myfinance Consultoria e Inform\xe1tica Ltda ME',
@@ -160,3 +160,4 @@ class TestNotaCarioca(TestCase):
     def test_send(self):
         nota = NotaCarioca(key=self.key, certificate=self.certificate, city_code=3304557, env="sandbox", **self.rps)
         response = nota.send()
+
